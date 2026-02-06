@@ -1,12 +1,13 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-    base: '/splotnikov/',
-    build: {
-        rollupOptions: {
-            input: {
-                main: 'index.html',
-            },
-        },
+  base: "/splotnikov/",
+  build: {
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        cv: "cv.html",
+      },
     },
+  },
 });
