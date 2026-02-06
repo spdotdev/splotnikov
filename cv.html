@@ -1145,7 +1145,7 @@
             </div>
             <div class="cv-right">
                 <div class="cv-photo">
-                    <img src="profile.jpg" alt="Stanislav Plotnikov"
+                    <img src="profile.jpg" data-profile-img alt="Stanislav Plotnikov"
                         onerror="this.style.display='none'; var p=this.nextElementSibling; if(p) p.style.display='flex';">
                     <div class="photo-placeholder" style="display:none">Add <strong>profile.jpg</strong> for your photo
                     </div>
@@ -1218,6 +1218,11 @@
     </main>
 
     <script>
+        // Profile image: resolve path for both custom domain (/) and project path (/splotnikov/)
+        (function () {
+            var base = location.pathname.indexOf('/splotnikov') === 0 ? '/splotnikov' : '';
+            document.querySelectorAll('img[data-profile-img]').forEach(function (img) { img.src = base + '/profile.jpg'; });
+        })();
         // Theme (same as portfolio)
         const themeToggle = document.querySelector('.theme-toggle');
         const html = document.documentElement;
