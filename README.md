@@ -2,7 +2,6 @@
 
 Professional landing page for Scuttle Development.
 
-- <https://spdotdev.github.io/splotnikov/>
 - <https://splotnikov.dev>
 
 ## Features
@@ -30,8 +29,8 @@ To deploy to GitHub Pages:
    ```js
    // vite.config.js
    export default {
-     base: '/<REPO_NAME>/',
-   }
+     base: "/<REPO_NAME>/",
+   };
    ```
 2. Build the project:
    ```bash
@@ -39,5 +38,4 @@ To deploy to GitHub Pages:
    ```
 3. Push the content of the `dist` folder to a `gh-pages` branch, or configure GitHub Pages to deploy from the root of a branch containing the build artifacts.
 
-   *Alternative:* Use a GitHub Action to build and deploy automatically.
-
+   _Alternative:_ Use a GitHub Action to build and deploy automatically.
