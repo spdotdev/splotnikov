@@ -525,6 +525,41 @@
             margin-bottom: 0.2rem;
         }
 
+        .cv-main .past-roles-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.45rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .cv-main .past-role-card {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.5rem 0.65rem;
+            background: var(--bg-secondary);
+        }
+
+        .cv-main .past-role-name {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--text-primary);
+            margin: 0 0 0.1rem;
+        }
+
+        .cv-main .past-role-sector {
+            font-size: 0.7rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin: 0 0 0.2rem;
+        }
+
+        .cv-main .past-role-desc {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.4;
+        }
+
         .cv-main .education-line {
             font-size: 0.9rem;
             font-weight: 600;
@@ -628,10 +663,10 @@
             color: #475569;
         }
 
-        /* PDF: compact so everything fits one A4, same as print */
+        /* PDF: scaled to fill one A4 page */
         #cv-content.pdf-export .cv-main {
             font-size: 9pt;
-            line-height: 1.32;
+            line-height: 1.30;
         }
 
         #cv-content.pdf-export .cv-main h1 {
@@ -647,13 +682,14 @@
         }
 
         #cv-content.pdf-export .cv-main h2 {
-            font-size: 9.5pt;
-            margin: 5pt 0 3pt;
+            font-size: 8.5pt;
+            margin: 4pt 0 2pt;
+            padding-bottom: 1pt;
         }
 
         #cv-content.pdf-export .cv-main h2.cv-section-primary {
-            font-size: 10pt;
-            margin-top: 8pt;
+            font-size: 9.5pt;
+            margin-top: 5pt;
         }
 
         #cv-content.pdf-export .cv-main p,
@@ -661,12 +697,16 @@
             font-size: 8.5pt;
         }
 
+        #cv-content.pdf-export .cv-main ul {
+            margin: 2pt 0 2pt 10pt;
+        }
+
         #cv-content.pdf-export .cv-main li {
             margin-bottom: 1pt;
         }
 
         #cv-content.pdf-export .cv-main .job-block {
-            margin-bottom: 5pt;
+            margin-bottom: 4pt;
         }
 
         #cv-content.pdf-export .cv-main .job-meta {
@@ -674,7 +714,7 @@
         }
 
         #cv-content.pdf-export .cv-main .project-block {
-            margin-bottom: 4pt;
+            margin-bottom: 3pt;
         }
 
         #cv-content.pdf-export .cv-main .project-block h3 {
@@ -683,6 +723,28 @@
 
         #cv-content.pdf-export .cv-main .project-block p {
             font-size: 8pt;
+        }
+
+        #cv-content.pdf-export .cv-main .past-roles-grid {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2.5pt;
+            margin-bottom: 4pt;
+        }
+
+        #cv-content.pdf-export .cv-main .past-role-card {
+            padding: 3pt 5pt;
+        }
+
+        #cv-content.pdf-export .cv-main .past-role-name {
+            font-size: 7.5pt;
+        }
+
+        #cv-content.pdf-export .cv-main .past-role-sector {
+            font-size: 6.5pt;
+        }
+
+        #cv-content.pdf-export .cv-main .past-role-desc {
+            font-size: 7pt;
         }
 
         #cv-content.pdf-export .cv-right {
@@ -874,7 +936,7 @@
 
             #cv-content .cv-main {
                 font-size: 9pt;
-                line-height: 1.32;
+                line-height: 1.30;
             }
 
             #cv-content .cv-main h1 {
@@ -891,13 +953,14 @@
             }
 
             #cv-content .cv-main h2 {
-                font-size: 9.5pt;
-                margin: 5pt 0 3pt;
+                font-size: 8.5pt;
+                margin: 4pt 0 2pt;
+                padding-bottom: 1pt;
             }
 
             #cv-content .cv-main h2.cv-section-primary {
-                font-size: 10pt;
-                margin-top: 8pt;
+                font-size: 9.5pt;
+                margin-top: 5pt;
             }
 
             #cv-content .cv-main p,
@@ -905,12 +968,16 @@
                 font-size: 8.5pt;
             }
 
+            #cv-content .cv-main ul {
+                margin: 2pt 0 2pt 10pt;
+            }
+
             #cv-content .cv-main li {
                 margin-bottom: 1pt;
             }
 
             #cv-content .cv-main .job-block {
-                margin-bottom: 5pt;
+                margin-bottom: 4pt;
             }
 
             #cv-content .cv-main .job-meta {
@@ -918,7 +985,7 @@
             }
 
             #cv-content .cv-main .project-block {
-                margin-bottom: 4pt;
+                margin-bottom: 3pt;
             }
 
             #cv-content .cv-main .project-block h3 {
@@ -927,6 +994,28 @@
 
             #cv-content .cv-main .project-block p {
                 font-size: 8pt;
+            }
+
+            #cv-content .cv-main .past-roles-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 2.5pt;
+                margin-bottom: 4pt;
+            }
+
+            #cv-content .cv-main .past-role-card {
+                padding: 3pt 5pt;
+            }
+
+            #cv-content .cv-main .past-role-name {
+                font-size: 7.5pt;
+            }
+
+            #cv-content .cv-main .past-role-sector {
+                font-size: 6.5pt;
+            }
+
+            #cv-content .cv-main .past-role-desc {
+                font-size: 7pt;
             }
 
             #cv-content .cv-photo img,
@@ -1078,7 +1167,7 @@
                         Gateway Design.</li>
                     <li><strong>Engineering:</strong> PHP (Laravel, Symfony, Phalcon expert), Node.js, Python (AI/LLM
                         Integration).</li>
-                    <li><strong>Cloud & DevOps:</strong> Kubernetes, Docker, Ansible, CI/CD (GitHub Actions), Linux
+                    <li><strong>Cloud & DevOps:</strong> Docker, Ansible, CI/CD (GitHub Actions), Linux
                         Systems Hardening.</li>
                     <li><strong>Strategic AI:</strong> LLM Orchestration, Agentic Workflows, Automated System
                         Monitoring.</li>
@@ -1087,37 +1176,80 @@
                 <h2 class="cv-section-primary">Professional Experience</h2>
 
                 <div class="job-block">
-                    <p class="job-title">Senior Developer / Modernization Engineer | <a
-                            href="https://hosintra.com">Hosintra</a></p>
-                    <p class="job-meta">Dec 2024 – Present</p>
+                    <p class="job-title">Senior Developer / Startup Advisor</p>
                     <ul>
-                        <li>Architected and executed a Strangler Fig migration of a legacy Phalcon monolith to Laravel,
-                            allowing for incremental refactoring of core business logic with 0% system downtime.</li>
-                        <li>Engineered a custom middleware abstraction layer for complex vendor API integrations,
-                            reducing
-                            technical debt and preventing clients from migrating saving product.</li>
-                        <li>Standardized development workflows by implementing Docker-based environments and Ansible
-                            orchestration, reducing developer onboarding time from days to hours.</li>
-                        <li>Advised stakeholders on Infrastructure-as-Code (IaC) strategies, resulting in a moderate
-                            reduction in annual server overhead costs.</li>
+                        <li>Conducted in-depth marketing research for a startup entering the Brazilian specialty coffee
+                            market in the Tilburg region of the Netherlands.</li>
+                        <li>Delivered actionable market entry insights covering local consumer behavior, competitive
+                            landscape, and positioning strategy to guide the client's go-to-market decisions.</li>
                     </ul>
                 </div>
 
                 <div class="job-block">
-                    <p class="job-title">Senior Developer / Lead Architect | East-West Support</p>
-                    <p class="job-meta">Apr 2025 – Present</p>
+                    <p class="job-title">Senior Developer / Modernization Engineer | Hosintra B.V.</p>
                     <ul>
-                        <li>Optimized Linux-based server architectures, improving system reliability and achieving 99.9%
-                            uptime for high-traffic applications.</li>
-                        <li>Developed automated pipelines using Python, increasing data processing and automation speed
-                            by
-                            40%.</li>
-                        <li>Developing Voice AI phone call automation platform for support that is scalable and robust,
-                            reducing client support workforce by 100%.</li>
+                        <li>Upgraded the core application framework from Phalcon 3.4 to Laravel 12, enabling access to a
+                            modern ecosystem and long-term vendor support.</li>
+                        <li>Migrated the runtime environment from PHP 7.4 to PHP 8.4, resolving all deprecations and
+                            modernizing the codebase to leverage current language features.</li>
                     </ul>
                 </div>
 
-                <h2 class="cv-section-primary">Key Projects (The "Proof" Section)</h2>
+                <div class="job-block">
+                    <p class="job-title">Senior Developer / Automation & AI Engineer | East-West Support</p>
+                    <ul>
+                        <li>Developed automated data processing pipelines in Python, increasing throughput and
+                            automation speed by 40%.</li>
+                        <li>Architected and built a scalable, robust Voice AI phone call automation platform for
+                            customer support, reducing client support workforce requirements by 100%.</li>
+                    </ul>
+                </div>
+
+                <div class="job-block">
+                    <p class="job-title">Senior Developer / API Integration Engineer | Hosintra B.V.</p>
+                    <ul>
+                        <li>Engineered a custom middleware abstraction layer for complex vendor API integrations,
+                            significantly reducing technical debt and eliminating client migration risk, saving the
+                            product.</li>
+                    </ul>
+                </div>
+
+                <h2 class="cv-section-primary">Employment History</h2>
+
+                <div class="past-roles-grid">
+                    <div class="past-role-card">
+                        <p class="past-role-name">Getnoticed</p>
+                        <p class="past-role-sector">Recruitment Marketing · PHP / Symfony</p>
+                        <p class="past-role-desc">Developed employer branding and conversion-driven career websites for the labor market.</p>
+                    </div>
+                    <div class="past-role-card">
+                        <p class="past-role-name">Bek 1 op 1 publiceren</p>
+                        <p class="past-role-sector">Omnichannel Communications · PHP / Laravel</p>
+                        <p class="past-role-desc">Bridged physical print and digital marketing portals to help brands communicate consistently with customers.</p>
+                    </div>
+                    <div class="past-role-card">
+                        <p class="past-role-name">New Brand Activators</p>
+                        <p class="past-role-sector">Brand Activation · PHP / Laravel</p>
+                        <p class="past-role-desc">Created physical and digital brand interaction platforms to drive customer loyalty and engagement.</p>
+                    </div>
+                    <div class="past-role-card">
+                        <p class="past-role-name">Mijnwebwinkel.nl</p>
+                        <p class="past-role-sector">E-commerce / SaaS · PHP / Symfony</p>
+                        <p class="past-role-desc">Built and maintained SaaS infrastructure enabling businesses to launch and manage online stores.</p>
+                    </div>
+                    <div class="past-role-card">
+                        <p class="past-role-name">@Leisure Group</p>
+                        <p class="past-role-sector">E-commerce / Travel · PHP / Symfony</p>
+                        <p class="past-role-desc">Developed a digital travel platform processing bookings and payments for vacation rentals.</p>
+                    </div>
+                    <div class="past-role-card">
+                        <p class="past-role-name">Van Os Beheer & Beleggingen BV</p>
+                        <p class="past-role-sector">Finance / Telecom · PHP</p>
+                        <p class="past-role-desc">Delivered digital marketing and telecom solutions within a financial holding group.</p>
+                    </div>
+                </div>
+
+                <h2 class="cv-section-primary">Key Projects</h2>
 
                 <div class="project-block">
                     <h3>Legacy Modernization Project (Phalcon to Laravel)</h3>
@@ -1190,7 +1322,6 @@
                         <div class="cv-expertise-group">
                             <span class="cv-expertise-group-label">Infra</span>
                             <div class="cv-focus-pills">
-                                <span class="cv-pill">Kubernetes</span>
                                 <span class="cv-pill">Docker</span>
                                 <span class="cv-pill">Linux</span>
                                 <span class="cv-pill">Ansible</span>
@@ -1200,7 +1331,11 @@
                         <div class="cv-expertise-group">
                             <span class="cv-expertise-group-label">AI</span>
                             <div class="cv-focus-pills">
-                                <span class="cv-pill">AI & LLM</span>
+                                <span class="cv-pill">Claude</span>
+                                <span class="cv-pill">Cursor</span>
+                                <span class="cv-pill">Perplexity</span>
+                                <span class="cv-pill">Gemini</span>
+                                <span class="cv-pill">OpenRouter</span>
                             </div>
                         </div>
                     </div>
@@ -1245,13 +1380,21 @@
         }
 
         // Print
-        document.getElementById('btn-print').addEventListener('click', () => window.print());
+        document.getElementById('btn-print').addEventListener('click', () => {
+            const el = document.getElementById('cv-content');
+            el.classList.add('pdf-export', 'pdf-export-light');
+            setTimeout(() => {
+                window.print();
+                el.classList.remove('pdf-export', 'pdf-export-light');
+            }, 100);
+        });
 
         // PDF (ATS-optimized: one A4, always light theme to avoid dark edges)
         document.getElementById('btn-pdf').addEventListener('click', () => {
             const el = document.getElementById('cv-content');
             const btn = document.getElementById('btn-pdf');
             el.classList.add('pdf-export', 'pdf-export-light');
+
             requestAnimationFrame(() => {
                 const opt = {
                     margin: 0,
