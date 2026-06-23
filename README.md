@@ -1,6 +1,15 @@
 # Stanislav Plotnikov
 
-Professional landing page for Scuttle Development.
+> ## ⚠️ This repo is being migrated
+> This static GitHub Pages site is being replaced by a Laravel site-package served from
+> our own server. It stays live at <https://splotnikov.dev> **only until the DNS cutover**,
+> after which this repo will be archived (read-only).
+>
+> **Migrating to → [`spdotdev/splotnikov-dev`](https://github.com/spdotdev/splotnikov-dev)**
+> (a versioned Composer package mounted into the [`spdotdev/sd-admin`](https://github.com/spdotdev/sd-admin) host via host-based routing).
+> Migration manual: [`sd-admin/docs/MIGRATION.md`](https://github.com/spdotdev/sd-admin/blob/main/docs/MIGRATION.md).
+
+Professional landing page for Stanislav Plotnikov.
 
 - <https://splotnikov.dev>
 
